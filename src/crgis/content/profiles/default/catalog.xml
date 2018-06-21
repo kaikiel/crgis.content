@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<object name="portal_catalog" meta_type="Plone Catalog Tool">
+
+<index name="bgis_type" meta_type="FieldIndex">
+  <indexed_attr value="bgis_type" />
+</index>
+
+<index name="area1_bgis" meta_type="FieldIndex">
+  <indexed_attr value="area1_bgis" />
+</index>
+
+<index name="deity_main" meta_type="FieldIndex">
+  <indexed_attr value="deity_main" />
+</index>
+
+<index name="deity" meta_type="FieldIndex">
+  <indexed_attr value="deity" />
+</index>
+
+<index name="wynm" meta_type="FieldIndex">
+  <indexed_attr value="wynm" />
+</index>
+
+<index name="area1_temple" meta_type="FieldIndex">
+  <indexed_attr value="area1_temple" />
+</index>
+
+<index name="area2" meta_type="FieldIndex">
+  <indexed_attr value="area2" />
+</index>
+
+<index name="hostcmpn" meta_type="FieldIndex">
+  <indexed_attr value="hostcmpn" />
+</index>
+
+<index name="founded" meta_type="FieldIndex">
+  <indexed_attr value="founded" />
+</index>
+
+<index name="purpose" meta_type="FieldIndex">
+  <indexed_attr value="purpose" />
+</index>
+
+<index name="material" meta_type="FieldIndex">
+  <indexed_attr value="material" />
+</index>
+
+<index name="locational" meta_type="FieldIndex">
+  <indexed_attr value="locational" />
+</index>
+
+<index name="color" meta_type="FieldIndex">
+  <indexed_attr value="color" />
+</index>
+
+<index name="genre" meta_type="FieldIndex">
+  <indexed_attr value="genre" />
+</index>
+
+<index name="posture" meta_type="FieldIndex">
+  <indexed_attr value="posture" />
+</index>
+
+<index name="gender" meta_type="FieldIndex">
+  <indexed_attr value="gender" />
+</index>
+
+<index name="lct_cou" meta_type="FieldIndex">
+  <indexed_attr value="lct_cou" />
+</index>
+
+<index name="lct_tow" meta_type="FieldIndex">
+  <indexed_attr value="lct_tow" />
+</index>
+
+<index name="lct_vil" meta_type="FieldIndex">
+  <indexed_attr value="lct_vil" />
+</index>
+
+<index name="height" meta_type="FieldIndex">
+  <indexed_attr value="height" />
+</index>
+
+</object>
+

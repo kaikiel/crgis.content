@@ -1,0 +1,55 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="crgis.content">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <include package=".browser" />
+  <include file="vocabulary.zcml" />
+  <genericsetup:registerProfile
+      name="default"
+      title="crgis.content"
+      directory="profiles/default"
+      description="Installs the crgis.content add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="crgis.content (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the crgis.content add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="crgis.content-hiddenprofiles" />
+  
+  <adapter name="bgis_type" factory=".indexers.bgis_type" />
+  <adapter name="area1_bgis" factory=".indexers.area1_bgis" />
+  <adapter name="deity_main" factory=".indexers.deity_main" />
+  <adapter name="deity" factory=".indexers.deity" />
+  <adapter name="wynm" factory=".indexers.wynm" />
+  <adapter name="area1_temple" factory=".indexers.area1_temple" />
+  <adapter name="area2" factory=".indexers.area2" />
+  <adapter name="hostcmpn" factory=".indexers.hostcmpn" />
+  <adapter name="founded" factory=".indexers.founded" />
+  <adapter name="purpose" factory=".indexers.purpose" />
+  <adapter name="material" factory=".indexers.material" />
+  <adapter name="locational" factory=".indexers.locational" />
+  <adapter name="color" factory=".indexers.color" />
+  <adapter name="genre" factory=".indexers.genre" />
+  <adapter name="posture" factory=".indexers.posture" />
+  <adapter name="gender" factory=".indexers.gender" />
+  <adapter name="lct_cou" factory=".indexers.lct_cou" />
+  <adapter name="lct_tow" factory=".indexers.lct_tow" />
+  <adapter name="lct_vil" factory=".indexers.lct_vil" />
+  <adapter name="height" factory=".indexers.height" />
+</configure>
